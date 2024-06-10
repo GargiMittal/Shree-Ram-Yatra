@@ -174,7 +174,7 @@
 
 /*** Hero Header ***/
 .hero-header {
-    background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(../img/bg-hero.jpg);
+    background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(../img/bg-hero.jpeg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -470,4 +470,27 @@
 .whatsapp-button {
     bottom: 45px; /* Adjust this value to position the WhatsApp button */
     background-color: #25D366; /* This is the official WhatsApp green color */
+}
+
+
+/* CSS */
+.carousel-item {
+    transition: transform 2s;
+}
+
+
+
+@keyframes zoomout {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.2); }
+}
+
+.carousel-inner img {
+    object-fit: cover;
+    width: 80%; /* Adjust this value to make the image smaller or larger */
+    height: auto;
+    aspect-ratio: 3 / 3;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
